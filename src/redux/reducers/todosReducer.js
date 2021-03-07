@@ -80,14 +80,13 @@ const todosReducer = (state = initialState, action) => {
         loading: true
       };
 
-    case actionTypes.DELETE_ALL_TODOS_SUCCESS: {
+    case actionTypes.DELETE_ALL_TODOS_SUCCESS:
       return {
         ...state,
         loading: false,
         todos: []
       };
-    };
-    
+
     case actionTypes.SET_PATCH_ON: {
       const patchData = action.payload;
 
@@ -96,14 +95,14 @@ const todosReducer = (state = initialState, action) => {
         patchData
       };
     };
-    
-    case actionTypes.SET_PATCH_OFF: 
+
+    case actionTypes.SET_PATCH_OFF:
       return {
         ...state,
         patchData: null
       };
-    
-    case actionTypes.STOP_LOADER: 
+
+    case actionTypes.STOP_LOADER:
       return {
         ...state,
         loading: false
