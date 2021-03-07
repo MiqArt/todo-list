@@ -100,10 +100,10 @@ const Form = () => {
       </CustomColorPicker>
       {
         patchData ?
-          <>
+          <BtnGroup>
             <StyledButton backgroundColor="#e7b034" onClick={onHandleSave}>Save</StyledButton>
             <StyledButton backgroundColor="#7b5f1f" onClick={onHandleCancel}>Cancel</StyledButton>
-          </>
+          </BtnGroup>
           :
           <StyledButton backgroundColor="#3fc667" onClick={onHandleSubmit}>Add</StyledButton>
       }
@@ -119,9 +119,13 @@ export default Form;
 const FormContainer = styled.div`
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  };
 `;
 
 const ErrorText = styled.span`
@@ -152,9 +156,17 @@ const StyledInput = styled.input`
     box-shadow: ${({ error }) => error ?
     'inset 3px 3px 5px #ff111145, inset -2px -2px 7px #f7eaea'
     : 'inset 3px 3px 5px #8ec0c9, inset -2px -2px 7px #c0ffff'
+    };
   };
-  }
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  };
 `;
+
+const BtnGroup = styled.div`
+  display: flex;
+`
 
 const StyledButton = styled.button`
   font-family: 'Roboto',sans-serif;
@@ -162,7 +174,7 @@ const StyledButton = styled.button`
   font-size: 16px;
   color: white;
   height: 40px;
-  padding: 0 20px;
+  padding: 0 12px;
   margin-right: 20px;
   border: none;
   outline: none;
@@ -176,19 +188,30 @@ const StyledButton = styled.button`
   &:active {
     box-shadow: inset 2px 2px 2px #407b5fad, inset -2px -2px 2px #e1ffe7d9;
     padding-bottom: 2px;
-  }
+  };
+  &:last-child {
+    margin-left: auto;
+    margin-right: 5px;
+  };
+  @media (max-width: 1000px) {
+    margin: 10px;
+  };
 `;
 
 const CustomColorPicker = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  max-width: 172px;
+  max-width: 170px;
   padding: 5px;
   margin-right: 20px;
   border-radius: 4px;
   box-shadow: 5px 5px 10px #66b7c5, -5px -5px 10px #c7ffff;
   background-color: #ffffff;
+  @media (max-width: 1000px) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  };
 `;
 
 const ColorSquare = styled.div`
