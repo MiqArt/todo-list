@@ -137,6 +137,9 @@ const ErrorText = styled.span`
   left: 7px;
   color: red;
   display: ${({ error }) => error ? 'block' : 'none'};
+  @media (max-width: 1000px) {
+    bottom: 23px;
+  };
 `;
 
 const StyledInput = styled.input`
@@ -161,6 +164,7 @@ const StyledInput = styled.input`
   @media (max-width: 1000px) {
     margin-bottom: 10px;
     margin-right: 0;
+    width: 100%;
   };
 `;
 
