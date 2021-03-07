@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/todo-list/static/css/main.9e27efe9.chunk.css",
+    "main.js": "/todo-list/static/js/main.675c1082.chunk.js",
+    "main.js.map": "/todo-list/static/js/main.675c1082.chunk.js.map",
+    "runtime-main.js": "/todo-list/static/js/runtime-main.df7b891f.js",
+    "runtime-main.js.map": "/todo-list/static/js/runtime-main.df7b891f.js.map",
+    "static/css/2.3f6a4e7d.chunk.css": "/todo-list/static/css/2.3f6a4e7d.chunk.css",
+    "static/js/2.1c9e0025.chunk.js": "/todo-list/static/js/2.1c9e0025.chunk.js",
+    "static/js/2.1c9e0025.chunk.js.map": "/todo-list/static/js/2.1c9e0025.chunk.js.map",
+    "index.html": "/todo-list/index.html",
+    "static/css/2.3f6a4e7d.chunk.css.map": "/todo-list/static/css/2.3f6a4e7d.chunk.css.map",
+    "static/css/main.9e27efe9.chunk.css.map": "/todo-list/static/css/main.9e27efe9.chunk.css.map",
+    "static/js/2.1c9e0025.chunk.js.LICENSE.txt": "/todo-list/static/js/2.1c9e0025.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/todo-list/static/media/Roboto-Regular.03523cf5.ttf",
+    "static/media/completed.cf523d68.svg": "/todo-list/static/media/completed.cf523d68.svg",
+    "static/media/delete.f010c554.svg": "/todo-list/static/media/delete.f010c554.svg",
+    "static/media/edit.df4a3b5c.svg": "/todo-list/static/media/edit.df4a3b5c.svg",
+    "static/media/loader.6e39f111.svg": "/todo-list/static/media/loader.6e39f111.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df7b891f.js",
+    "static/css/2.3f6a4e7d.chunk.css",
+    "static/js/2.1c9e0025.chunk.js",
+    "static/css/main.9e27efe9.chunk.css",
+    "static/js/main.675c1082.chunk.js"
+  ]
+}
