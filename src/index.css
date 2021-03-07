@@ -41,3 +41,9 @@ code {
   src: local('Roboto-Bold'), url(./assets/fonts/Roboto-Bold.ttf) format('truetype');
   font-weight: bold
 }
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+}

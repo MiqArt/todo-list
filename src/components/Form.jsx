@@ -107,7 +107,7 @@ const Form = () => {
           :
           <StyledButton backgroundColor="#3fc667" onClick={onHandleSubmit}>Add</StyledButton>
       }
-      <StyledButton onClick={onHandleDeleteAll} backgroundColor="#f34b4b">Clear All</StyledButton>
+      {todos.length > 0 && <StyledButton className="clearAllBtn" onClick={onHandleDeleteAll} backgroundColor="#f34b4b">Clear All</StyledButton>}
     </FormContainer>
   );
 };
@@ -193,7 +193,7 @@ const StyledButton = styled.button`
     box-shadow: inset 2px 2px 2px #407b5fad, inset -2px -2px 2px #e1ffe7d9;
     padding-bottom: 2px;
   };
-  &:last-child {
+  &.clearAllBtn {
     margin-left: auto;
     margin-right: 5px;
   };
